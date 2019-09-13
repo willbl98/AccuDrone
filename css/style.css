@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #1a1919;
+
+}
+/*Global*/
+.container{
+  width: 80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+/*Header*/
+header{
+  background: #1a1919;
+  color: #000000;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+/*font in header*/
+header a{
+  color:#ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+
+}
+
+/*unordered list in header*/
+header ul{
+  margin: 0;
+  padding: 70px 0 0 50px;
+}
+
+/*ordered list in header*/
+header li{
+  float: right;
+  display: inline;
+  padding: 0 20px 0 20px; /*top, right, bottom, left --- padding on each button*/
+}
+
+header #branding img{
+  float:left;
+  padding: 0 0 20px 0;
+}
+
+header #branding h1{
+  margin: 0;
+}
+
+header #nav{
+  float: right;
+  margin-top:40px;
+}
+
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+  min-height: 400px;
+  background:url('../img/showcase1.jpg') no-repeat 0 -450px;
+  background-size: cover;
+}
+
+#showcase h1{
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+
+  background-color: rgba(26, 25, 25, 0.4);
+  padding: 16px;
+  border-radius: 8px;
+  mix-blend-mode: hard-light;
+}
+
+#zipcode{
+  border-top:#1a1919 3px solid;
+  min-height: 400px;
+  background:url('../img/showcase2.jpg') no-repeat 0 -450px;
+  background-size: cover;
+  opacity: 0.95;
+  text-align: center;
+  color: #ffffff;
+  border-bottom:#F36F21 3px solid;
+  display: -webkit-flex;
+  display: flex;
+ -webkit-flex-wrap: wrap;
+ flex-wrap: wrap;
+ -webkit-align-content: center;
+ align-items: middle;
+}
+
+#zipcode input{
+  width: 12%;
+  height: 41px;
+  padding: 7px 12px;
+  margin: 0px 0;
+  box-sizing: border-box;
+  background: transparent;
+  color: #ffffff;
+  border-color: rgba(26, 25, 25, 0.4);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+
+::placeholder{
+  color: rgba(255, 255, 255, 1);
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+#zipcode button{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background-color: rgba(26, 25, 25, 0.4);
+  border-color: rgba(26, 25, 25, 0.4);
+  padding: 7px 12px;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 0 var(--dark-pink);
+}
+
+#accuweather h1{
+  text-align: center;
+  color: #F36F21;
+  align: middle;
+}
+
+#accuweather img{
+  padding-top: 4.5px;
+}
+
+footer {
+  color: #ffffff;
+}
