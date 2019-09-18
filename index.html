@@ -13,12 +13,12 @@
     <header>
       <div class="container">
         <div id="branding">
-          <img src="img\logo2_html.png" style="width:600px;height:120px">
+          <img src="img\logo3_html.png" style="width:600px;height:120px">
         </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">How it Works</a></li>
+          <li><a href="HowItWorks.html">How it Works</a></li>
         </ul>
       </nav>
     </header>
@@ -35,8 +35,10 @@
     <section id="zipcode">
       <div class="container">
           <form>
-            <input type="number" placeholder="Enter zip">
+            <input type="number" placeholder="Enter zip" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length>4) return false;" name="zipcode">
             <button type="Submit" class="button1">Submit</button>
+          </form>
+
       </div>
     </section>
 
@@ -47,7 +49,8 @@
     </section>
 
     <footer>
-      <p>AccuDrone Flight Planner, Copyright &copy; 2019</p>
+      <p1>AccuDrone Flight Planner  </p1>
+      <p2>Created by Taylor Brewer & Willian Blackwell</p2>
 
   </body>
 </html>

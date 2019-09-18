@@ -41,7 +41,7 @@ header ul{
 header li{
   float: right;
   display: inline;
-  padding: 0 20px 0 20px; /*top, right, bottom, left --- padding on each button*/
+  padding: 30px 10px 0 10px; /*top, right, bottom, left --- padding on each button*/
 }
 
 header #branding img{
@@ -112,6 +112,15 @@ header a:hover{
   font-family: Arial;
 }
 
+/*Disables up & down arrows on the right of the input field*/
+#zipcode input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
 ::placeholder{
   color: rgba(255, 255, 255, 1);
   font-family: Arial;
@@ -133,10 +142,15 @@ header a:hover{
   box-shadow: 0 5px 0 0 var(--dark-pink);
 }
 
+accuweather {
+  padding: 90px;
+}
+
 #accuweather h1{
   text-align: center;
   color: #F36F21;
   align: middle;
+  font-family: Helvetica;
 }
 
 #accuweather img{
@@ -145,4 +159,52 @@ header a:hover{
 
 footer {
   color: #ffffff;
+}
+
+footer p1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer p2 {
+  font-size: 13px;
+}
+
+#HowItWorks h1, p{
+  color: #ffffff;
+  font-family: "Arial";
+}
+
+/*Makes site more dynamic to different window views*/
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  header img{
+    float:none;
+    text-align:center;
+    width:100%
+  }
+
+  header{
+    padding-bottom:20px
+  }
+
+  #showcase1 h1{
+    margin-top:40px;
+  }
+
+  #showcase2 h1{
+    margin-top: 40px;
+  }
+
+  #zipcode button{
+    display: block;
+    width: 100%;
+  }
+
+  #zipcode form input[type="number"]{
+    width: 100%;
+    margin-bottom: 5px;
+  }
 }
